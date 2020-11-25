@@ -1,13 +1,178 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  min-height: 100vh;
+  background: #282b30;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", "Roboto", "Ubuntu", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll;
+}
+
+input,
+textarea {
+  font-family: "Roboto", "Poppins", "Ubuntu", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+}
+
+.poppins {
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.roboto {
+  font-family: "Roboto";
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Roboto", "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.bullet-ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 0;
+}
+
+.content {
+  margin: 120px 0;
+  position: relative;
+}
+
+.padtop {
+  padding-top: 80px;
+}
+
+.wrapper {
+  padding: 0 30px;
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+}
+
+.button {
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 10px 12px;
+  font-weight: 300;
+  color: #fff;
+  width: fit-content;
+  font-size: 14px;
+  display: flex;
+  height: 40px;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.align {
+  align-items: center;
+}
+
+.just {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.margin-tb10 {
+  margin: 10px 0 10px 0;
+}
+
+.margin-tb20 {
+  margin: 20px 0 20px 0;
+}
+
+.margin-t10 {
+  margin-top: 10px;
+}
+
+.margin-t20 {
+  margin-top: 20px;
+}
+
+.margin-b10 {
+  margin-bottom: 10px;
+}
+
+.margin-b20 {
+  margin-bottom: 20px;
+}
+
+.margin-t5 {
+  margin-bottom: 5px;
+}
+
+.margin-b5 {
+  margin-bottom: 5px;
 }
