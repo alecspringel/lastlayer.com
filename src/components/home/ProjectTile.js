@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const ProjectTile = ({ bgImg, logoImg, caption, url }) => {
   return (
-    <Tile href={url}>
+    <Tile href={url} target="_blank">
       <Overlay className="flex-col just align overlay">
         <LogoImg src={logoImg} />
         <h5 className="roboto text-center margin-t20">{caption}</h5>

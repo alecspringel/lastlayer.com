@@ -9,7 +9,7 @@ const Header = () => {
       <Background>
         <Overlay className="flex-row just align">
           <Logo src={LLLogo} />
-          <h1 className="text-large">
+          <h1 className="text-large text-center">
             Software development for a better world.
           </h1>
         </Overlay>

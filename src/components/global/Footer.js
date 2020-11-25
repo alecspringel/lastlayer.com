@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
         <div className="flex-col">
           <h6 className="margin-b10">Links</h6>
-          <a href="http://farmplot.com" className="roboto">
+          <a href="http://farmplot.com" target="_blank" className="roboto">
             farmPlot
           </a>
         </div>
