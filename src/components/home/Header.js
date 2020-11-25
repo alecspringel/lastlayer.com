@@ -9,7 +9,9 @@ const Header = () => {
       <Background>
         <Overlay className="flex-row just align">
           <Logo src={LLLogo} />
-          <HugeH1>Software development for a better world.</HugeH1>
+          <h1 className="text-large">
+            Software development for a better world.
+          </h1>
         </Overlay>
       </Background>
     </div>
@@ -33,10 +35,6 @@ const Overlay = styled.div`
   width: 100%;
   height: 100%;
   background: #00000050;
-`;
-
-const HugeH1 = styled.h1`
-  font-size: 55px;
 `;
 
 const Logo = styled.img`
