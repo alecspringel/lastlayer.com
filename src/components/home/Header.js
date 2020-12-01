@@ -16,7 +16,7 @@ const Header = () => {
           <h1 className="text-large text-center">
             Custom software design &amp; development
           </h1>
-          <h2 className="poppins margin-t10">
+          <h2 className="home-subheading poppins margin-t20 text-center">
             Last Layer provides complete web and mobile app development for your
             business.
           </h2>
@@ -31,7 +31,7 @@ export default Header;
 const Background = styled.section`
   position: relative;
   width: 100%;
-  background: url(${BackgroundImg});
+  background: #010407;
   background-size: cover;
   height: 100vh;
 `;
@@ -48,7 +48,7 @@ const Overlay = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: #00000050;
+  background: #00000080;
   padding: 30px;
 `;
 

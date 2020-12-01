@@ -159,7 +159,10 @@ ul {
 
 @media (max-width: 450px) {
   .text-large {
-    font-size: 45px;
+    font-size: 36px;
+  }
+  .home-subheading {
+    font-size: 18px;
   }
 }
 
