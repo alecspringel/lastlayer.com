@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import LogoImg from "../../assets/ll-logo.svg";
+import LogoImg from "../../assets/ll-logo.png";
 
 const Footer = () => {
   return (
     <Wrapper>
-      <div
+      <FooterFlex
         className="wrapper flex-row"
         style={{ justifyContent: "space-between" }}
       >
@@ -14,7 +14,7 @@ const Footer = () => {
             <Logo src={LogoImg} />
           </a>
           <span
-            className="margin-t20"
+            className="margin-t20 text-center"
             style={{ fontFamily: "arial", fontSize: 14 }}
           >
             © 2020 Last Layer LLC · All rights reserved
@@ -22,18 +22,18 @@ const Footer = () => {
         </LogoWrapper>
 
         <div className="flex-col">
-          <h6 className="margin-b10">Contact</h6>
+          <h6 className="margin-b10 text-center">Contact</h6>
           <a href="mailto:alec@lastlayer.com" className="roboto">
             alec@lastlayer.com
           </a>
         </div>
         <div className="flex-col">
-          <h6 className="margin-b10">Links</h6>
+          <h6 className="margin-b10 text-center">Links</h6>
           <a href="http://farmplot.com" target="_blank" className="roboto">
             farmPlot
           </a>
         </div>
-      </div>
+      </FooterFlex>
     </Wrapper>
   );
 };
@@ -45,8 +45,19 @@ const Wrapper = styled.footer`
   background: #30343c;
 `;
 
+const FooterFlex = styled.div`
+  @media (max-width: 810px) {
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+  }
+`;
+
 const Logo = styled.img`
   height: 72px;
+  @media (max-width: 810px) {
+    height: 52px;
+  }
 `;
 
 const LogoWrapper = styled.div`

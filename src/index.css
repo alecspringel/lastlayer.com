@@ -26,11 +26,6 @@ html {
   border-radius: 10px;
 }
 
-/* Handle on hover */
-/* ::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
-} */
-
 body {
   margin: 0;
   font-family: "Poppins", "Roboto", "Ubuntu", "Helvetica Neue", sans-serif;
@@ -160,6 +155,12 @@ ul {
 
 .text-large {
   font-size: 55px;
+}
+
+@media (max-width: 450px) {
+  .text-large {
+    font-size: 45px;
+  }
 }
 
 .text-center {

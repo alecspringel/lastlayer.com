@@ -20,7 +20,7 @@ const Tile = styled.a`
   background: #3c73fd;
   border-radius: 4px;
   max-width: 600px;
-  min-width: 450px;
+  min-width: 250px;
   box-shadow: 0px 0px 6px #00000070;
   transition: all 150ms;
   &:hover {
@@ -40,6 +40,7 @@ const Overlay = styled.div`
   background: #000000a6;
   transition: all 150ms ease-in-out;
   border-radius: 4px 4px 0 0;
+  padding: 15px;
 `;
 
 const BGImg = styled.img`
@@ -54,5 +55,5 @@ const CaptionDiv = styled.div`
 `;
 
 const LogoImg = styled.img`
-  height: 50px;
+  height: 40px;
 `;
