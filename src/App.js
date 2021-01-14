@@ -4,7 +4,7 @@ import Projects from "./components/home/Projects";
 
 function App() {
   return (
-    <div>
+    <div style={{ overflowX: "hidden" }}>
       <Home />
       <Projects />
       <Footer />

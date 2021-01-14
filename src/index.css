@@ -1,6 +1,6 @@
 html {
   min-height: 100vh;
-  background: #282b30;
+  background: #fff;
 }
 
 *,
@@ -8,22 +8,6 @@ html {
 :before {
   box-sizing: border-box;
   color: #fff;
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 17px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgb(83, 83, 83);
-  border-radius: 10px;
 }
 
 body {
@@ -42,7 +26,7 @@ textarea {
 
 .poppins {
   font-family: "Poppins";
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .roboto {
@@ -57,7 +41,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h1 {
@@ -90,6 +74,10 @@ p {
   font-family: "Roboto", "Poppins", sans-serif;
 }
 
+.wide-text {
+  line-height: 30px;
+}
+
 a {
   text-decoration: none;
   font-size: 18px;
@@ -117,6 +105,10 @@ ul {
   padding-top: 80px;
 }
 
+.relative {
+  position: relative;
+}
+
 .wrapper {
   padding: 0 30px;
   max-width: 1200px;
@@ -134,6 +126,10 @@ ul {
   font-size: 14px;
   display: flex;
   height: 40px;
+}
+
+.flex-1 {
+  flex: 1;
 }
 
 .flex-row {
