@@ -111,21 +111,36 @@ ul {
 
 .wrapper {
   padding: 0 30px;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: auto;
   width: 100%;
 }
 
-.button {
+.btn {
   cursor: pointer;
   border-radius: 2px;
-  padding: 10px 12px;
-  font-weight: 300;
-  color: #fff;
-  width: fit-content;
+  padding: 0 12px;
+  font-weight: 500;
+  font-family: "Poppins";
   font-size: 14px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   height: 40px;
+}
+
+.shadow-btn {
+  box-shadow: 0px 2px 6px 1px #0000001c;
+}
+
+.primary-btn {
+  color: #fff;
+  background-color: #46d98f;
+}
+
+.white-btn {
+  color: #4a9fed;
+  background-color: #fff;
 }
 
 .flex-1 {
@@ -186,12 +201,28 @@ ul {
   margin-top: 20px;
 }
 
+.margin-t30 {
+  margin-top: 30px;
+}
+
+.margin-t40 {
+  margin-top: 40px;
+}
+
 .margin-b10 {
   margin-bottom: 10px;
 }
 
 .margin-b20 {
   margin-bottom: 20px;
+}
+
+.margin-b30 {
+  margin-bottom: 30px;
+}
+
+.margin-b40 {
+  margin-bottom: 40px;
 }
 
 .margin-t5 {

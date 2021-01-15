@@ -1,24 +1,30 @@
 import React from "react";
 import styled from "styled-components";
-import LLLogo from "../../assets/ll-logo-white.svg";
 import BackgroundGradient from "../../assets/home-background-gradient.svg";
 import DeviceImg from "../../assets/device-mockup.png";
 
 const Header = () => {
   return (
     <>
-      <Logo src={LLLogo} />
       <Container>
         <TopCorner />
-        <Content className="flex-row align just flex-1">
-          <div style={{ flex: 2, padding: 30 }}>
+        <Content className="flex-row align just flex-1 wrapper">
+          <TextDiv style={{ flex: 2 }}>
             <h1>Custom software &amp; app development</h1>
-            <p className="wide-text">
-              Last Layer creates beautiful looking, functional web and
-              <br />
-              mobile apps for businesses, individuals, and creatives.
+            <p className="wide-text" style={{ maxWidth: 485 }}>
+              Last Layer creates beautiful looking, functional web and mobile
+              apps for businesses, individuals, and creatives.
             </p>
-          </div>
+            <div className="flex-row margin-t40">
+              <a className="btn primary-btn shadow-btn">GET STARTED</a>
+              <a
+                className="btn white-btn shadow-btn"
+                style={{ marginLeft: 20 }}
+              >
+                CONTACT US
+              </a>
+            </div>
+          </TextDiv>
           <div className="flex-1 relative">
             <Devices src={DeviceImg} />
           </div>
@@ -29,14 +35,6 @@ const Header = () => {
 };
 
 export default Header;
-
-const Logo = styled.img`
-  position: absolute;
-  left: 30px;
-  top: 30px;
-  height: 43px;
-  z-index: 1;
-`;
 
 const TopCorner = styled.div`
   position: absolute;
@@ -60,11 +58,26 @@ const Container = styled.div`
   height: 600px;
 `;
 
+const Heading = styled.h1`
+  @media (max-width: 670px) {
+    font-size: 28px;
+  }
+`;
+
 const Content = styled.div`
-  max-width: 89em;
-  margin: 0 auto;
+  margin: 40px auto;
   transform: skewY(7deg);
   height: 100%;
+
+  @media (max-width: 670px) {
+    flex-direction: column;
+  }
+`;
+
+const TextDiv = styled.div`
+  @media (max-width: 670px) {
+    margin-top: 450px;
+  }
 `;
 
 const Devices = styled.img`
@@ -72,4 +85,15 @@ const Devices = styled.img`
   position: absolute;
   top: -180px;
   left: -50%;
+
+  @media (max-width: 1050px) {
+    height: 700px;
+  }
+
+  @media (max-width: 670px) {
+    height: 500px;
+    position: relative;
+    top: auto;
+    left: auto;
+  }
 `;
